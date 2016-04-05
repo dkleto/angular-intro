@@ -1,0 +1,10 @@
+<!-- Partial HTML template for "software" route -->
+<div class="content">
+  <ul>
+    Search <input ng-model="query">
+    <li ng-repeat="software in softwareList | filter:query">
+    {{software.name}}
+    {{software.version}}
+    </li>
+  </ul>
+</div>

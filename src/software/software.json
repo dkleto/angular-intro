@@ -1,0 +1,22 @@
+[
+    {"name" : "Moodle",
+     "version" : "3.0.3+",
+     "description" : "Moodle is a learning platform designed to provide educators, administrators and learners with a single robust, secure and integrated system to create personalised learning environments.",
+     "language" : "PHP"
+    },
+    {"name" : "Drupal",
+     "version" : "7.43",
+     "description" : "Drupal is content management software. It's used to make many of the websites and applications you use every day.",
+     "language" : "PHP"
+    },
+    {"name" : "Mahara",
+     "version" : "15.10",
+     "description" : "Mahara is a fully featured web application to build your electronic portfolio.",
+     "language" : "PHP"
+    },
+    {"name" : "Koha",
+     "version" : "3.22.5",
+     "description" : "LibLime Koha is the most advanced open-source Integrated Library System in use today by hundreds of libraries worldwide.",
+     "language" : "Perl"
+    }
+]

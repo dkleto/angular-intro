@@ -1,5 +1,5 @@
 
-var intro = angular.module('intro', ['ngRoute', 'logoCtrl']);
+var intro = angular.module('intro', ['ngRoute', 'logoCtrl', 'softCtrl']);
 
 intro.config(['$routeProvider',
   function($routeProvider) {
@@ -7,6 +7,10 @@ intro.config(['$routeProvider',
       when('/logos', {
         templateUrl: 'partials/logos.html',
         controller: 'logoCtrl'
+      }).
+      when('/software', {
+        templateUrl: 'partials/software.html',
+        controller: 'softCtrl'
       }).
       otherwise({
         redirectTo: '/logos'
