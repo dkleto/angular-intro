@@ -30,7 +30,7 @@
       <input ng-model="blue" type="number" min=0 max=255 name="blue"> Blue</input>
       <br>
     </form>
-    <div class="logoText" >
+    <div class="logoText" ng-style="getRgbColour(red, green, blue)">
       <span>Angular</span><span class="redJs">JS</span>
     </div>
     <ul>
