@@ -33,7 +33,7 @@
     <div class="logoText" ng-style="getRgbColour(red, green, blue)">
       <span>Angular</span><span class="redJs">JS</span>
     </div>
-    <span class="addButton">+</span>
+    <span ng-click="addLogo(red, green, blue)" class="addButton" ng-show="rgbForm.$valid">+</span>
       <ul>
         <li>
           Red: {{red}}
@@ -46,12 +46,18 @@
         </li>
       </ul>
   </div>
-  <div>
+  <div ng-show="logoList.length > 0">
     <h2>
       Angular Logos
     </h2>
     <div class="content">
-      <!-- This is where our list of AngularJS logos will go -->
+      <ul>
+        <li ng-repeat="logo in logoList">
+          <div class="logoText" ng-style="getRgbColour(logo.red, logo.green, logo.blue)">
+            <span>Angular</span><span class="redJs">JS</span>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
   <!--[if lt IE 7]>
