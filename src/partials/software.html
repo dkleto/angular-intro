@@ -1,8 +1,9 @@
 <!-- Partial HTML template for "software" route -->
 <div class="content">
-  <ul>
-    Search <input ng-model="query">
-    <li ng-repeat="software in softwareList | filter:query">
+  <h2 class="softwareTitle">Software</h2>
+  <input ng-model="query">
+  <ul class="softwareList">
+    <li class="softwareItem" ng-class-even="'softwareEven'" ng-repeat="software in softwareList | filter:query">
     {{software.name}}
     {{software.version}}
     </li>

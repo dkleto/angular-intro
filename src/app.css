@@ -59,3 +59,21 @@ li {
   border-radius: 0.3em;
   background-color: #FFFFFF;
 }
+.softwareList {
+  margin: 0.5em 0 0.5em 0;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.softwareTitle {
+  margin: 0.5em 0 0.5em 0;
+}
+.softwareItem {
+  font-size: 1.1em;
+  padding: 0.1em;
+  background-color: #ffffff;
+}
+.softwareEven {
+  background-color: #e7e7e7;
+}
