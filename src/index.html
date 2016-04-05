@@ -23,16 +23,27 @@
   </div>
   <div class="content">
     <form name="rgbForm">
-      <input type="number" min=0 max=255 name="red"> Red</input>
+      <input ng-model="red" type="number" min=0 max=255 name="red"> Red</input>
       <br>
-      <input type="number" min=0 max=255 name="green"> Green</input>
+      <input ng-model="green" type="number" min=0 max=255 name="green"> Green</input>
       <br>
-      <input type="number" min=0 max=255 name="blue"> Blue</input>
+      <input ng-model="blue" type="number" min=0 max=255 name="blue"> Blue</input>
       <br>
     </form>
     <div class="logoText" >
       <span>Angular</span><span class="redJs">JS</span>
     </div>
+    <ul>
+      <li>
+        Red: {{red}}
+      </li>
+      <li>
+        Green: {{green}}
+      </li>
+      <li>
+        Blue: {{blue}}
+      </li>
+    </ul>
   </div>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
